@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #31346f;
+}
+
+/* set scoer dialog */
+#score{
+    border: double red 5px;
+    margin: auto;
+    width: 20%;
+    margin-top: 50px;
+    padding: 60px;
+    z-index: 100%;
+}
+
+/* player Score */
+.player{
+    font-size: 30px;
+    color: red;
+    background-color: transparent;
+    position: relative;
+    top: -128px;
+    left: 400px;
+    text-decoration: underline yellow 2px;
+}
+.player-score > p{
+    position: relative;
+    left: -7px;
+    font-size: 25px;
+}
+.player-score{
+    background-color: white;
+    margin: auto;
+    width: 10%;
+    padding: 5px 20px 5px 20px;
+    position: relative;
+    top: 15px;
+    left: -135px;
+    border: solid 2px yellow; 
+}
+
+/* com score*/
+.com-score > p{
+    position: relative;
+    left: -7px;
+    font-size: 25px;
+}
+.com-score{
+    background-color: white;
+    margin: auto;
+    width: 10%;
+    padding: 5px 20px 5px 20px;
+    position: relative;
+    left: 135px;
+    top: -25px;
+    border: solid 2px yellow;
+}
+.com{
+font-size: 30px;
+    color: red;
+    background-color: transparent;
+    text-decoration: underline yellow 2px;
+    position: relative;
+    top: -128px;
+    left : 725px;
+}
+
+/* set the playing option */ 
+#option{
+    margin: auto;
+    width : 60%;
+    padding: 20px 0px 0px 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 70px;;
+}
+.icon{
+    display: inline-block;
+}
+.icon > p {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    color: antiquewhite;
+    margin-top: 20px;
+    margin-right: -105px;
+    
+}
+.icon > img{
+    margin : 0px 0px 0px 100px;
+    width: 150px;
+    padding: 5px;
+}
+img:checked{
+    border: red solid 3px;
+}
+img:hover{
+    transform: scale(1.1);
+    border-radius: 50%;
+    border: rgba(255, 0, 0, 0.37) solid 1px;
+    box-shadow: 0 0 10px rgba(224, 210, 11, 0.7);
+}
+/* play button */
+#button{
+    color: yellow;
+    letter-spacing: 20px;
+    font-size: 50px;
+    background-color: transparent;
+    padding: 30px 50px;
+    border-radius: 25px;
+    border: solid yellowgreen 1px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#button:hover{
+    color: red;
+    box-shadow: 0 0 10px yellow;
+}
+#button:focus{
+    border-color: red;
+    color: red;
+    outline: none;
+}
+
+/* result */
+.result{
+    line-height: 80px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 27px;
+    color: rgba(238, 255, 0);
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
