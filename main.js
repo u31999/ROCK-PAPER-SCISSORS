@@ -7,10 +7,7 @@ let com = 0;
 let player = 0;
 // add the listener which start the game
 
-play.addEventListener('play', onclick = btn);
-
-//on click reset the game
-
+play.addEventListener('play', play.onclick = btn);
 
 // assign the value of player choice in to playerOption
     function playerChoice(e){
@@ -77,6 +74,14 @@ function compare(){
 function btn(){
     // change button text
     play.textContent = "RESET";
+
+    //on click reset the game
+    play.addEventListener('reset', play.onclick = () => {
+        if(play.textContent == "RESET"){
+            location.reload();
+        }
+    });
+
     option.addEventListener('rock', onclick = playerChoice);
 
 
